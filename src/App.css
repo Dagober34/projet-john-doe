@@ -7,3 +7,21 @@ h1, h2, h3, h4, h5, h6,
 strong {
   font-weight: 600;
 }
+/* Surlignage au survol */
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+/* Lien actif : gras + souligné */
+.custom-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: gray;
+}
+
+.social-icons a:hover {
+  color: white;
+}
