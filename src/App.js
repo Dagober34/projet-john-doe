@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, Link, NavLink } from "react-router-dom";
 import './App.css'
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -25,11 +25,11 @@ export default function App() {
 
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><Link className="nav-link text-white" to="/">HOME</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white" to="/service">SERVICES</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white" to="/portfolio">PORTFOLIO</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white" to="/contact">CONTACT</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white" to="/legal">MENTION LEGALES</Link></li>
+                <li className="nav-item"><NavLink className="nav-link text-white custom-link" to="/">HOME</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link text-white custom-link" to="/service">SERVICES</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link text-white custom-link" to="/portfolio">PORTFOLIO</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link text-white custom-link" to="/contact">CONTACT</NavLink></li>
+                <li className="nav-item"><NavLink className="nav-link text-white custom-link" to="/legal">MENTION LEGALES</NavLink></li>
               </ul>
             </div>
           </div>
@@ -51,35 +51,35 @@ export default function App() {
               <h5 className="mb-3">John Doe</h5>
               <p className="small">40 rue Laure Diebold<br/> 69000 Lyon, France</p>
               <p className="small">10 20 30 40 50<br/> 
-              <a href="mailto:john.doe@gmail.com" className="text-white text-decoration-none">john.doe@gmil.com</a></p>
+              <a href="mailto:john.doe@gmail.com" className="text-white text-decoration-none">john.doe@gmail.com</a></p>
               <div className="social-icons mt-3">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-white me-3">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="me-3">
                 <i className="bi bi-github" style={{ fontSize: '1.5rem' }}></i></a>
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-white me-3">
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="me-3">
                 <i className="bi bi-twitter" style={{ fontSize: '1.5rem' }}></i></a>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-white">
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin" style={{ fontSize: '1.5rem' }}></i></a>
               </div>
             </div>
             <div className="col-md-4 col-sm-6 mb-4">
               <h5 className="mb-3">Liens utiles</h5>
               <ul className="list-unstyled">
-                <li><a href="#accueil" className="text-white text-decoration-none small">Accueil</a></li>
-                <li><a href="#services" className="text-white text-decoration-none small">Services</a></li>
-                <li><a href="#portfolio" className="text-white text-decoration-none small">Portfolio</a></li>
-                <li><a href="#contact" className="text-white text-decoration-none small">Me contacter</a></li>
-                <li><a href="#mentions-legales" className="text-white text-decoration-none small">Mentions légales</a></li>
+                <li><Link className="nav-link text-white" to="/">Accueil</Link></li>
+                <li><Link className="nav-link text-white" to="/service">Services</Link></li>
+                <li><Link className="nav-link text-white" to="/portfolio">Portfolio</Link></li>
+                <li><Link className="nav-link text-white" to="/contact">Me contacter</Link></li>
+                <li><Link className="nav-link text-white" to="/legal">Mentions légales</Link></li>
               </ul>
             </div>
             <div className="col-md-4 mb-4">
               <h5 className="mb-3">Mes dernières réalisations</h5>
               <ul className="list-unstyled">
-                <li><a href="#realisation-1" className="text-white text-decoration-none small">Fresh Food</a></li>
-                <li><a href="#realisation-2" className="text-white text-decoration-none small">Restaurant Akira</a></li>
-                <li><a href="#realisation-3" className="text-white text-decoration-none small">Espace bien-être</a></li>
-                <li><a href="#realisation-4" className="text-white text-decoration-none small">SEO</a></li>
-                <li><a href="#realisation-5" className="text-white text-decoration-none small">Création d'une API</a></li>
-                <li><a href="#realisation-6" className="text-white text-decoration-none small">Maquette d'un site</a></li>
+                <li><Link className="nav-link text-white" to="/portfolio">Fresh Food</Link></li>
+                <li><Link className="nav-link text-white" to="/portfolio">Restaurant Akira</Link></li>
+                <li><Link className="nav-link text-white" to="/portfolio">Espace bien-être</Link></li>
+                <li><Link className="nav-link text-white" to="/portfolio">SEO</Link></li>
+                <li><Link className="nav-link text-white" to="/portfolio">Création d'une API</Link></li>
+                <li><Link className="nav-link text-white" to="/portfolio">Maquette d'un site</Link></li>
               </ul>
             </div>
           </div> 
