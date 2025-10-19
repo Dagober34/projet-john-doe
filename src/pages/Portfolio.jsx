@@ -1,4 +1,6 @@
+// Intégrer le composant de portfolio
 import PortfolioCard from '../components/PortfolioCard';
+// Intégrer les images
 import banner from '../assets/images/banner.jpg';
 import img1 from '../assets/images/fresh-food.jpg';
 import img2 from '../assets/images/restaurant-japonais.jpg';
@@ -8,8 +10,9 @@ import img5 from '../assets/images/screens.jpg';
 import img6 from '../assets/images/coder.jpg';
 
 const Portfolio = () => {
+    // Propriété de l'image du haut
     const heroStyle = {backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '160px'};
-
+    // Les propriété des 6 carés
     const items = [
         {image: img1, title: 'Fresh Food', subtitle: "Site de vente de produits frais en ligne"},
         {image: img2, title: 'Restaurant Akira', subtitle: 'Site de vente de produits frais en ligne'},
@@ -31,7 +34,7 @@ const Portfolio = () => {
                         <hr style={{height: '4px'}} />
                     </div>
                 </header>
-
+                {/* Divisés en 6 carrés égaux */}
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {items.map((it, idx) => (
                         <div className="col" key={idx}>
@@ -40,12 +43,8 @@ const Portfolio = () => {
                     ))}
                 </div>
             </div>
-            {/* <main className="portfolio-main">
-                <h1>Portfolio</h1>
-                <p>Voici quelques-unes de mes réalisations</p>
-            </main> */}
         </div>
-    )
+    );
 };
 
 export default Portfolio;

@@ -4,6 +4,7 @@ import aboutImage from '../assets/images/john-doe-about.jpg';
 import ProfileModal from '../components/ProfileModal';
 
 const Home = () => {
+    // Images en arrière-plan
     const heroStyle = {
         backgroundImage: `url(${bannerImage})`,
         backgroundSize: 'cover',
@@ -14,7 +15,9 @@ const Home = () => {
     
     return (
         <main className="home-main bg-light">
+            {/* Le haut du corps */}
             <section className="position-relative d-flex align-items-center text-white" style={heroStyle}>
+                {/* Bouton Rouge */}
                 <div style={{
                     position: 'absolute',
                     top: 0,
@@ -26,13 +29,16 @@ const Home = () => {
                 <div className="container text-center position-relative">
                     <h1 className="display-4 fw-bold mb-3 ">Bonjour, je suis John Doe</h1>
                     <h2 className="fw-bold h1" >Développeur web full stack</h2>
+                    {/* Attribut du bouton */}
                     <button type="button" className="btn btn-danger btn-sm px-3" data-bs-toggle="modal" data-bs-target="#profileModal">
                         En savoir plus
                     </button>
                 </div>
             </section>
+            {/* Bas du corp divisé en 2 */}
             <section id="about" className="container my-5">
                 <div className="card shadow-sm">
+                    {/* Partie 1 : A propos */}
                     <div className="card-body p-4 p-md-5">
                         <div className="row g-5">
                             <div className="col-md-6">
@@ -60,6 +66,7 @@ const Home = () => {
                                     veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                                 </p>
                             </div>
+                            {/* Partie 2 : Compétences */}
                             <div className="col-md-6">
                                 <h4 className="card-title mb-1">Mes compétences</h4>
                                 <div className="border-top border-3 border-primary w-50 mb-3"></div>
@@ -69,6 +76,7 @@ const Home = () => {
                                         <small className="text-muted">HTML5</small>
                                         <small className="text-muted">90%</small>
                                     </div>
+                                    {/* Barre de progression HTML */}
                                     <div className="progress" style={{ height: '10px' }}>
                                         <div className="progress-bar bg-danger" style={{ width: '90%' }} />
                                     </div>
@@ -78,6 +86,7 @@ const Home = () => {
                                         <small className="text-muted">CSS3</small>
                                         <small className="text-muted">80%</small>
                                     </div>
+                                    {/* Barre de progression CSS */}
                                     <div className="progress" style={{ height: '10px' }}>
                                         <div className="progress-bar bg-info" style={{ width: '80%' }} />
                                     </div>
@@ -88,6 +97,7 @@ const Home = () => {
                                         <small className="text-muted">JAVASCRIPT</small>
                                         <small className="text-muted">70%</small>
                                     </div>
+                                    {/* Barre de progression JS */}
                                     <div className="progress" style={{ height: '10px' }}>
                                         <div className="progress-bar bg-warning" style={{ width: '70%' }} />
                                     </div>
@@ -98,6 +108,7 @@ const Home = () => {
                                         <small className="text-muted">PHP</small>
                                         <small className="text-muted">60%</small>
                                     </div>
+                                    {/* Barre de progression PHP */}
                                     <div className="progress" style={{ height: '10px' }}>
                                         <div className="progress-bar bg-success" style={{ width: '60%' }} />
                                     </div>
@@ -107,6 +118,7 @@ const Home = () => {
                                         <small className="text-muted">REACT</small>
                                         <small className="text-muted">50%</small>
                                     </div>
+                                    {/* Barre de progression REACT */}
                                     <div className="progress" style={{ height: '10px' }}>
                                         <div className="progress-bar bg-primary" style={{ width: '50%' }} />
                                     </div>
@@ -118,13 +130,6 @@ const Home = () => {
             </section>
             <ProfileModal />
         </main>
-        // <div>
-        //     <main className="home-main">
-        //         <h1>Bonjour, je suis John Doe</h1>
-        //         <h2>Développeur web full stack</h2>
-        //     </main>
-            
-        // </div>
     );
 };
 

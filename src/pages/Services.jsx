@@ -1,6 +1,7 @@
 import banner from '../assets/images/banner.jpg';
 
 const Services = () => {
+    // Propriété de l'image du Haut
     const heroStyle = {
     backgroundImage: `url(${banner})`,
     backgroundSize: 'cover',
@@ -18,10 +19,13 @@ const Services = () => {
                         <hr style={{ height: '4px' }} />
                     </div>
                 </header>
+                {/* Divisé en 3 parties égaux */}
                 <div className="row g-4">
+                    {/* Partie 1 */}
                     <div className="col-md-4">
                         <div className="card h-100 text-center shadow-sm">
                             <div className="card-body">
+                                {/* Icônes de stylo */}
                                 <div className="mb-3 text-primary" style={{ fontSize: '28px' }}>
                                     <i className="fa-solid fa-pen-nib"></i>
                                 </div>
@@ -34,9 +38,11 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
+                    {/* Parti 2 */}
                     <div className="col-md-4">
                         <div className="card h-100 text-center shadow-sm">
                             <div className="card-body">
+                                {/* Icônes de code */}
                                 <div className="mb-3 text-primary" style={{ fontSize: '28px' }}>
                                     <i className="fa-solid fa-code"></i>
                                 </div>
@@ -48,9 +54,11 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
+                    {/* Partie 3 */}
                     <div className="col-md-4">
                         <div className="card h-100 text-center shadow-sm">
                             <div className="card-body">
+                                {/* Icônes de loupe */}
                                 <div className="mb-3 text-primary" style={{ fontSize: '28px' }}>
                                     <i className="fa-solid fa-magnifying-glass"></i>
                                 </div>
@@ -65,10 +73,6 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            {/* <main className="service-main">
-                <h1>Mon offre de services</h1>
-                <p>Voici les prestations sur lesquelles je peux intervenir</p>
-            </main> */}
         </div>
     );
 };

@@ -12,7 +12,9 @@ const Legal = () => {
 
             <div className="row justify-content-center">
                 <div className="col-lg-8">
+                    {/* Mise en page accordéon grâce à Bootstrap */}
                     <div className="accordion" id="legalAccordion">
+                        {/* Elements du premier bouton d'accordéon */}
                         <div className="accordion-item">
                             <h2 className="accordion-header" id="headingOne">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -29,7 +31,7 @@ const Legal = () => {
                                 </div>
                             </div>
                         </div>
-
+                        {/* Elements du deuxième bouton d'accordéon */}
                         <div className="accordion-item">
                             <h2 className="accordion-header" id="headingTwo">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -44,7 +46,7 @@ const Legal = () => {
                                 </div>
                             </div>
                         </div>
-
+                        {/* Elements du troizième bouton d'accordéon */}
                         <div className="accordion-item">
                             <h2 className="accordion-header" id="headingThree">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -63,9 +65,6 @@ const Legal = () => {
                     </div>
                 </div>
             </div>
-            {/* <main className="legal-main">
-                <h1>Mentions légales</h1>
-            </main> */}
         </div>
     )
 };

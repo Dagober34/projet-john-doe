@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// J'intègre router-dom pour générer plusieur page sur mon site
 import { BrowserRouter } from 'react-router-dom';
 // J'intègre les élément de bootstrap dans mon projet
 import 'bootstrap/dist/css/bootstrap.css';

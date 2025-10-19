@@ -1,27 +1,28 @@
+/* Police Nunito Sans pour tout le site une graisse de 400 pour le corps du texte  */
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
 }
-
+/* Une graisse de 600 pour les titres et les balises strong  */
 h1, h2, h3, h4, h5, h6,
 strong {
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
 }
-/* Surlignage au survol */
+/* Barre de navigation : souligné au survol */
 .custom-link:hover {
   text-decoration: underline;
 }
-
-/* Lien actif : gras + souligné */
+/* Barre de navigation : lien actif devient gras et souligné */
 .custom-link.active {
   font-weight: bold;
   text-decoration: underline;
 }
-
+/* Iconnes de réseaux sociaux: couleur gris noormalement */
 .social-icons a {
   color: gray;
 }
-
+/* Iconnes de réseaux sociaux s'éclaircit au survol */
 .social-icons a:hover {
   color: white;
 }

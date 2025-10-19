@@ -16,7 +16,7 @@ const Contact = () => {
                         <div className="col-md-6">
                             <h4 className="card-title">Formulaire de contact</h4>
                             <hr className="border-primary" />
-
+                            {/* Formulaire */}
                             <form>
                                 <div className="mb-2">
                                     <input className="form-control" type="text" placeholder="Votre nom" />
@@ -47,7 +47,7 @@ const Contact = () => {
                                 <p className="mb-1 text-muted">10 20 30 40 50</p>
                                 <p className="mb-1"><a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a></p>
                             </div>
-
+                            {/* Afficher sur map */}
                             <div className="ratio ratio-4x3">
                                 <iframe
                                     title="map"
@@ -61,10 +61,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            {/* <main className="contact-main">
-                <h1>Contact</h1>
-                <h2>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact</h2>
-            </main> */}
         </div>
     )
 };
